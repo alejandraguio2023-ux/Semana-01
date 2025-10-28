@@ -1,0 +1,100 @@
+# Actividad 1: Identificación de Objetos
+
+## Semana 01 - Introducción al Paradigma Orientado a Objetos  
+**Estudiante:** Maria Alejandra Guio Palacios  
+**Ficha:** 3228970A  
+**Dominio:** Jardín Botánico *“Flora Colombiana”*
+
+---
+
+## Objetos Identificados
+
+### 1. Planta (`PlantSpecimen`)
+**Descripción:**  
+Un espécimen vegetal registrado dentro del jardín botánico, parte de la colección viva.
+
+**Características (Atributos):**  
+- Código del espécimen  
+- Nombre científico  
+- Nombre común  
+- Origen  
+- Estado de conservación  
+
+**Comportamientos (Métodos):**  
+- `registrarPlanta()`  
+- `actualizarEstado()`  
+- `regar()`  
+- `mostrarInformación()`  
+
+---
+
+### 2. Biólogo (`Biologist`)
+**Descripción:**  
+Profesional encargado del estudio, clasificación y cuidado de las especies del jardín.
+
+**Características (Atributos):**  
+- Nombre  
+- Identificación  
+- Especialidad  
+- Años de experiencia  
+
+**Comportamientos (Métodos):**  
+- `clasificarPlanta()`  
+- `actualizarFichaBotánica()`  
+- `supervisarConservación()`  
+
+---
+
+### 3. Invernadero (`Greenhouse`)
+**Descripción:**  
+Espacio controlado dentro del jardín donde se mantienen plantas bajo condiciones específicas.
+
+**Atributos:**  
+- `String name` – Nombre del invernadero  
+- `double temperature` – Temperatura actual en grados Celsius  
+- `double humidity` – Porcentaje de humedad  
+- `String plantType` – Tipo de plantas que alberga (tropicales, desérticas, orquídeas)  
+- `List<Plant> plants` – Lista de plantas dentro del invernadero  
+
+**Métodos:**  
+- `void controlarTemperatura(double nuevaTemperatura)` – Ajusta la temperatura del invernadero  
+- `void mantenerHumedad(double nuevaHumedad)` – Regula la humedad interna  
+- `void agregarPlanta(Plant plant)` – Añade una planta al invernadero  
+- `void mostrarEstado()` – Muestra información general del invernadero  
+
+---
+
+### 4. Evento o Exhibición (`EventExhibition`)
+**Descripción:**  
+Actividad realizada en el jardín para promover la conservación y la educación ambiental.
+
+**Atributos:**  
+- `String name` – Nombre del evento o exhibición  
+- `String date` – Fecha de realización  
+- `String theme` – Tema central  
+- `int durationHours` – Duración en horas  
+- `List<Visitor> attendees` – Visitantes registrados  
+
+**Métodos:**  
+- `void iniciar()` – Marca el inicio del evento  
+- `void finalizar()` – Cierra el evento o exhibición  
+- `void registrarAsistencia(Visitor visitor)` – Añade un visitante al evento  
+- `void mostrarDetalles()` – Imprime la información completa del evento  
+
+---
+
+### 5. Visitante (`Visitor`)
+**Descripción:**  
+Persona que asiste al jardín botánico para realizar un tour, participar en un evento o comprar plantas.
+
+**Características (Atributos):**  
+- Nombre  
+- Tipo de visitante (estudiante, turista, investigador)  
+- Edad  
+- TicketID  
+
+**Comportamientos (Métodos):**  
+- `ingresarJardín()`  
+- `participarTour()`  
+- `comprarPlanta()`  
+- `dejarComentario()`  
